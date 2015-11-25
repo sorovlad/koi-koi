@@ -1,0 +1,241 @@
+body
+{
+	margin: 0;
+}
+.wrapper
+{
+	display: flex;
+	flex-flow: row wrap;
+	background: linear-gradient(to top, #7ccd7c, #9aff9a, #7ccd7c);
+	min-width: 480px;
+	min-height: 400px;
+}
+header
+{
+	width: 100vw;
+	height: 20px;
+	background-color: black;
+	display: none;
+}
+footer
+{
+	width: 100vw;
+	height: 20px;
+	background-color: black;
+	display: none;
+}
+nav
+{
+	position: fixed;
+	right: 0;
+	top: 0;
+	display: flex;
+	flex-flow: row nowrap;
+	background-color: rgba(16, 78, 139, .8);
+	color: #fff;
+	/*width: 7vw;*/
+}
+nav .navigate-button
+{
+	margin: 2px 5px;
+}
+nav a:visited,
+nav a:link
+{
+	text-decoration: none;
+	color: #fff;
+}
+
+.main-field
+{
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+	/*min-height: 100vh;*/
+	/*align-items: stretch;*/
+	/*position: relative;*/
+	width: 73vw;
+	min-height: 100vh;
+}
+.midle-field
+{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	height: 50vh;
+}
+.cards
+{
+	/*flex-grow: 1;*/
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-end;
+	align-items: center;
+	height: 25vh;
+}
+.statistic-game
+{
+	/*flex-grow: 1;*/
+	width: 100px;
+	height: 100%;
+	background-color: #104e8b;
+}
+.deck
+{
+	width: calc(1.5 * 7vh);
+	height: calc(2.5 * 7vh);
+	margin: 20px;
+	border: 5px solid #000;
+	background: url(image/cards/inverted.jpg) 100% 100% no-repeat;
+	background-size: cover;
+	/*flex-grow: 1;*/
+}
+.statistic
+{
+	height: 40%;
+	background-color: #104e8b;
+	border: 2px solid #1e90ff;
+}
+.count-round
+{
+	height: 20%;
+	background-color: #222;
+	color: #fff;
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 3px solid #1874cd
+}
+.table-with-cards
+{
+	display: flex;
+	flex-flow: row wrap;
+	width: calc(6 * 1.5 * 7vh);
+}
+.collected-card
+{
+	width: 27vw;
+	background-color: #9aff9a;
+}
+.card
+{
+	margin: 0.7vw;
+	border: 3px solid #000;
+	width: calc(1.5 * 7vh);
+	height: calc(2.5 * 7vh);
+}
+.player-bottom .card:hover
+{
+	transform: translate(5px, -5px);
+	box-shadow: -5px 2px 20px #fff, 
+		0 0 20px #ee7621,
+		0 0 30px rgba(255 , 255, 255, 0.9) !important;	
+
+}
+.player-cards-radio
+{
+	display: none;
+}
+.player-cards-radio:checked + .card
+{
+	display: none;
+}
+.player-cards-radio:checked + .card + .card
+{
+	display: flex;
+	box-shadow: 0 0 10px #551a8b, 
+		0 0 20px rgba(145 , 44, 238, 0.9),
+		0 0 30px rgba(255 , 255, 255, 0.9);	
+}
+
+
+.dublicate-cart
+{
+	display: none;
+}
+
+@media all and (max-width: 140vh) and (min-width: 500px) {
+    .wrapper
+    {
+    	/*background: black;*/
+    }
+    .main-field
+    {
+    	width: 100vw;
+    }
+    .collected-card
+    {
+    	position: fixed;
+    	left: 80vw;
+    	top: 25vh;
+    	height: 50vh;
+    	width: 20vw;
+    }
+    .cards
+    {
+    	justify-content: center;
+    }
+    .deck
+    {
+    	margin: 5px;
+    }
+}
+@media all and (max-width: 500px) {
+    .wrapper
+    {
+    }
+    .main-field
+    {
+    	width: 100vw;
+    }
+    .collected-card
+    {
+    	width: 100vw;
+    	height: 50px;
+    }
+    .deck
+    {
+    	margin: 5px;
+    }
+    .cards
+    {
+    	/*flex-flow:row wrap;*/
+    	/*justify-content: space-around;*/
+    	justify-content: center;
+
+    	/*height: auto;*/
+    }
+}
+
+
+
+
+
+
+.inverted
+{
+	background: url(image/cards/inverted.jpg) 100% 100% no-repeat;
+	background-size: cover;
+}
+.h-sun
+{
+	background: url(image/cards/sun.jpg) 100% 100% no-repeat;
+	background-size: cover;
+}
+.h-crane
+{
+	background: url(image/cards/crane.jpg) 100% 100% no-repeat;
+	background-size: cover;
+}
+.h-red-sky
+{
+	background: url(image/cards/red-sky.jpg) 100% 100% no-repeat;
+	background-size: cover;
+}
+.h-eight-plank-bridge
+{
+	background: url(image/cards/eight-plank-bridge.jpg) 100% 100% no-repeat;
+	background-size: cover;
+}
